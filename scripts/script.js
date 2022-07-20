@@ -2,19 +2,14 @@ new Vue({
   el: "#app",
   data() {
     return {
-      audio: null,
-      circleLeft: null,
-      barWidth: null,
-      duration: null,
-      currentTime: null,
-      isTimerPlaying: false,
+    
       tracks: [
         {
           name: "none",
           artist: "Se Acabo",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/1.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/1.mp3",
-          url: "https://www.youtube.com/watch?v=z3wAjJXbYzA",
+       
           favorited: true
         },
         {
@@ -22,7 +17,7 @@ new Vue({
           artist: "Вот как и так",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/2.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/2.mp3",
-          url: "https://www.youtube.com/watch?v=Lin-a2lTelg",
+       
           favorited: true
         },
         {
@@ -30,7 +25,7 @@ new Vue({
           artist: "Middle of the night",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/3.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/3.mp3",
-          url: "https://www.youtube.com/watch?v=ICjyAe9S54c",
+        
           favorited: true
         },
         {
@@ -38,7 +33,7 @@ new Vue({
           artist: "Ты и я",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/4.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/4.mp3",
-          url: "https://www.youtube.com/watch?v=kYgGwWYOd9Y",
+
           favorited: true
         },
         {
@@ -46,7 +41,6 @@ new Vue({
           artist: "Наверно ты меня не помнишь",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/5.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/5.mp3",
-          url: "https://www.youtube.com/watch?v=0WlpALnQdN8",
           favorited: true
         },
         {
@@ -54,7 +48,7 @@ new Vue({
           artist: "Deep dancing",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/6.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/6.mp3",
-          url: "https://www.youtube.com/watch?v=HhoATZ1Imtw",
+        
           favorited: true
         },
         {
@@ -62,7 +56,7 @@ new Vue({
           artist: "Go gyal",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/7.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/7.mp3",
-          url: "https://www.youtube.com/watch?v=me6aoX0wCV8",
+       
           favorited: true
         },
         {
@@ -70,7 +64,7 @@ new Vue({
           artist: "Моя душа",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/8.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/8.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+       
           favorited: true
         },
         {
@@ -78,7 +72,7 @@ new Vue({
           artist: "Devil Eyes",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/9.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/9.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+        
           favorited: true
         },
         {
@@ -86,7 +80,7 @@ new Vue({
           artist: "Number Frozen",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/10.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/10.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+      
           favorited: true
         },
         {
@@ -94,7 +88,7 @@ new Vue({
           artist: "Налей мне херес",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/11.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/11.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+         
           favorited: true
         },
         {
@@ -102,7 +96,7 @@ new Vue({
           artist: "Extazy",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/12.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/12.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+        
           favorited: true
         },
         {
@@ -110,7 +104,7 @@ new Vue({
           artist: "This is my life",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/13.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/13.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+       
           favorited: true
         },
         {
@@ -118,7 +112,7 @@ new Vue({
           artist: "Volna",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/14.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/14.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+        
           favorited: true
         },
 
@@ -127,7 +121,7 @@ new Vue({
           artist: "Catharsis",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/15.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/15.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+       
           favorited: true
         },
         {
@@ -135,7 +129,7 @@ new Vue({
           artist: "Jiggle Jiggle",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/16.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/16.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+       
           favorited: true
         },
         {
@@ -143,7 +137,7 @@ new Vue({
           artist: "No Lie",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/17.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/17.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+        
           favorited: true
         },
         {
@@ -151,7 +145,7 @@ new Vue({
           artist: "WE DON'T TALK ANYMORE",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/18.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/18.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+          
           favorited: true
         },
         {
@@ -159,7 +153,7 @@ new Vue({
           artist: "Paro",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/19.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/19.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+        
           favorited: true
         },
         {
@@ -167,7 +161,7 @@ new Vue({
           artist: "Qara 07",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/20.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/20.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+      
           favorited: true
         },
         {
@@ -175,7 +169,7 @@ new Vue({
           artist: "Close Eyes",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/21.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/21.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+        
           favorited: true
         },
         {
@@ -183,7 +177,7 @@ new Vue({
           artist: "My Baby",
           cover: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/img/22.jpg",
           source: "https://raw.githubusercontent.com/Mironshoh08/mini-player/master/mp3/22.mp3",
-          url: "https://www.youtube.com/watch?v=00-Rl3Jlx-o",
+        
           favorited: true
         },
         /*    
